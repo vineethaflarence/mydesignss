@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Student Template</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+       body {
+        background-color: white;
+       }
+       .nav-link {
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            margin:5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .nav-item :hover{
+            color:#e8b658;
+        }
+        ul {
+            text-align:center;
+        }
+        .name {
+            margin-top:10px;
+            color: #22293d; 
+            font-weight: bold;
+        }
+        .designation {
+            color: gray;
+            font-weight:400;
+        }
+        .heading {
+            color: #22293d; 
+            font-weight: bold;
+          
+        }
+       
+       
+        img{
+            width: 250px;
+    height: 250px;
+    object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
+    object-position: center center;
+    border-radius:50%;
+        }
+        .about {
+    padding: 20px; 
+    border-radius: 5px; 
+    margin:20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile ,.contact{
+background-color:#f2f2f2;
+text-align: center;
+padding:20px;
+width:100%;
+}
+.news{
+color:#22293d;
+font-weight: bold;
+background-color:#f2f2f2;
+text-align: center;
+padding:20px;
+width:100%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="logo.png" class="logo" style="width:200px;height:100px;margin:10px;"></a>
+        <nav class="navbar navbar-expand-lg navbar" style="background-color:#22293d;">
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link"  href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <p><b>Faculty</b>/Vineetha Flarence</p>
+        <div class="body-container">
+      <div class="row m-3 ">
+        <div class="cloumn">
+    <div class="profile col-lg-4 col-xs-12 mt-3">
+        <img src="Screenshot 2024-02-03 145635.png" >
+        <p class="name">Vineet Gandhi<br><span class="designation">Web Developer</span></p>
+    </div>
+
+    <div class="contact col-lg-4 col-xs-12 mt-3">
+        <!-- Add your contact information here -->
+        <a href=""><i class="fa fa-location"></i>&nbsp;</a>
+        <br>
+        <a href=""><i class="fa fa-envelope"></i>&nbsp;vineetha.flarence@iiit.ac.in</a>
+        <br>
+        <a href=""><i class="fa fa-phone"></i>&nbsp;9889989988</a>
+        <br>
+        <a href=""><i class="fa fa-phone"></i>&nbsp;Extn:</a>
+    </div>
+    <div class="news col-lg-4 col-xs-12 mt-3 ">
+        <p>NEWS</p>
+   </div>
+</div>
+    <div class="col-lg-8 col-xs-12">
+        <div class="about-box">
+            <div class="about col-lg-12 col-xs-12">
+                <p class="heading">About</p>
+                <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus</p>
+            </div>
+            <div class="about col-lg-12 col-xs-12">
+                <p class="heading">Area of Expertise</p>
+                <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+               <!--<div class="contact">
+                    <a href=""><i class="fa fa-location"></i>&nbsp;</a>
+                    <a href=""><i class="fa fa-envelope"></i>&nbsp;vineetha.flarence@iiit.ac.in</a>
+                    <a href=""><i class="fa fa-phone"></i>&nbsp;9889989988</a>
+                    <a href=""><i class="fa fa-phone"></i>&nbsp;Extn:</a>
+               </div>
+               <div class="news">
+                    <p>NEWS</p>
+               </div>
+               <div id="accordion">
+                <div class="card m-3">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+           
+        
+    </div>
+</body>
+</html>
